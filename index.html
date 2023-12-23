@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Suitmedia</title>
+</head>
+<body>
+    <div class="parallax intro">
+        <div class="fContainer">
+            <nav class="wrapper">
+                <div class="brand">
+                    <li><img src="img/suitmedia2.png" alt=""></li>
+                </div>
+                <ul class="navigation">
+                    <li class="li-navbar">
+                    <a href="work.html" class="a-navbar">Work</a>
+                    <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">About</a>
+                    <li class="li-navbar"></li>
+                    <a href="service.html" class="a-navbar">Services</a>
+                    <li class="li-navbar"></li>
+                    <a href="ide.html" class="a-navbar">Ideas</a>
+                    <li class="li-navbar"></li>
+                    <a href="karir.html" class="a-navbar">Careers</a>
+                    <li class="li-navbar"></li>
+                    <a href="kontak.html" class="a-navbar">Contact</a>
+                </ul>
+            </nav>
+        <div class="content">
+            <h4> Ideas</h4>
+            <h1>Where all our great things begin</h1>
+        </div>
+    </div>
+    <div class="input">
+        <tr><td>Show per page</td><td>
+            <div class="input-group">
+                <select name="limit" id="limit" onchange="datapo();" style="width: 50px" class="form-control">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select></div></td></tr>
+    </div>
+    <div class="sort">
+        <tr><td>Sort by</td><td>
+            <div class="sort-group">
+                <select name="limit" id="limit" onchange="datapo();" style="width: 100px" class="form-control">
+                    <option value="Terbaru">Terbaru</option>
+                    <option value="Terlama">Terlama</option>
+                </select></div></td></tr>
+    </div>
+    <div class="show">
+        <tr><td>Showing 1-10 of 100</td><td></td>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/hp.jpg">
+            <div class="card-content">
+                <h3>1 September 2022</h3>
+                <p>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/kamera.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/hp.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/kamera.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/hp.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/kamera.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/hp.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/kamera.jpg">
+            <div class="card-content">
+                <h3>5 September 2022</h3>
+                <p>Jangan Asal Pilih Influencers, Berikut Cara Menyusun Strategi Influencer ...</p>
+                <a href="" class="btn"> Read More</a>
+            </div>
+        </div>
+        <div class="page">
+            <button class="btn1" onclick="backBtn()"><img src="img/arrow.png">prev</button>
+            <ul>
+                <li class="link active" value="1"onclick="activeLink()">1</li>
+                <li class="link active" value="2"onclick="activeLink()">2</li>
+                <li class="link active" value="3"onclick="activeLink()">3</li>
+                <li class="link active" value="4"onclick="activeLink()">4</li>
+                <li class="link active" value="5"onclick="activeLink()">5</li>
+            </ul>
+            <button class="btn2" onclick="nextBtn()">next<img src="img/arrow.png"></button>
+        </div>
+    </div>
+    <script src="scroll.js"></script>
+    <script src="page.js"></script>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
